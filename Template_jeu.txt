@@ -1,0 +1,43 @@
+# Template MemoriCS
+
+
+## CONCEPTION : Objectif 1 : MVP
+
+### sprint 0 : Analyse du besoin et conception
+
+Le MemoriCS doit : 
+·  Permettre d'afficher proprement une grille de 4 x 4 puis du choix de l'utilisateur dans laquelle seront placées aléatoirement des tuiles « retournées ». 
+·  Permettre de gérer plusieurs modes de jeux.
+·  Permettre de gérer plusieurs thèmes de jeux.
+·  Permettre à l’utilisateur de jouer en lui demandant de choisir 2 cases
+·  Modifier la grille de jeu en prenant en compte l'instruction du joueur et en effectuant les transformations nécessaires.
+·  Indiquer lorsque le jeu est gagné et afficher le score obtenu
+
+On choisit le nom de grille pour désigner le plateau de jeu et que l'on définit comme le conteneur de l'ensemble des tuiles du jeu.
+Une tuile est un élément du jeu dont la valeur peut varier de 1 à 50. Elle possède un double ce qui permet de faire une paire de tuiles.
+
+User story : 
+En tant qu'utilisateur, je veux pouvoir initialiser le jeu et jouer avec ma souris ou mon clavier.
+En tant que joueur, je veux pouvoir voir mon score.
+En tant que joueur, je veux que le jeu soit ludique et donc que les thèmes soit adaptés à des enfants.
+
+### sprint 1 : Mise en place des fonctions du jeu
+
+Mise en place des données du jeu (affiche_grid.py), actions des joueurs (interaction_player.py), gestion du jeu (memory_basic.py).
+
+### sprint 2 : Mise en place des différents modes de jeu
+
+Jeu en solo, jeu en 1 versus 1, jeu contre l'ordinateur (game_modes.py)
+
+## CONCEPTION : Objectif 2 : Interface graphique
+
+### sprint 3 : Affichage de la grille dans tkinter
+
+Développement de dictionnaires de thèmes contenant des images (themes.py)
+Fenêtre de sélection de taille, mode de jeu, thèmes (interface_selection.py)
+Jeu possible avec interface graphique (jeu_a_2.py, jeu_solo.py)
+
+### sprint 4 : Améliorations
+
+Ajout d'une fenêtre d'accueil (Accueil.py)
+Ajout de sons
